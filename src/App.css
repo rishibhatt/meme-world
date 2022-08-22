@@ -1,0 +1,260 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+.App {
+  height: 100vh;
+  background-color: #1a202c;
+  overflow: scroll;
+  text-align: center;
+}
+#light 
+{
+  background-color: white;
+  
+}
+.toggleBtn {
+  font-size:42px;
+  background:transparent;
+  padding:5px;
+  margin:3px;
+  height:auto;
+  width:55px;
+  border:none;
+  transition: all 500ms;
+  
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px 0 30px;
+}
+.authed-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+#light .header, #light .sub-text
+{
+  color: #1a202c;
+}
+.sub-text {
+  font-size: 25px;
+  color: white;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-left:500px;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  float:right;
+  position:absolute;
+  margin-top:0;
+  margin-right:40px;
+}
+
+.disconnect-wallet-button {
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  float:right;
+  
+  margin-top:0;
+  margin-right:40px;
+}
+
+.submit-gif-button {
+  background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-left: 10px;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 45px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#light .footer-text, #light .gif-grid
+{
+  color:#1a202c;
+  
+}
+.gif-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  color:white;
+}
+
+.gif-grid .gif-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+
+.gif-item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.connected-container input[type='text'] {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  height: 60px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.connected-container button {
+  height: 50px;
+}
+
+#light .cloud
+{
+  background:#1a202c;
+  color:#eceff1;
+}
+.cloud{
+  width:500px;
+  height:220px;
+  margin:0 auto;
+  background:#ECEFF1;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+  font-family: 'Bungee';
+  font-weight:bold;
+  color: #1a202c;
+  font-size:48px;
+  float:left;
+  margin-left:180px;
+  margin-top:50px;
+  text-align:center;
+  
+}
+.cloud span{
+  color:#FFD43B;
+  -webkit-text-stroke: 1px black;
+}
+
+#light .cloud span
+{
+  color:#e16f23;
+  -webkit-text-stroke: 0.2px white;
+}
+.thak
+{
+  height:auto;
+  width:100%;
+  position:relative;
+  padding:20px;
+  
+}
+.thakGaye
+{
+  float:right;
+  margin-right:80px;
+  height:350px;
+  width: 450px;
+}
+@media (max-width:500px)
+{
+  .thakGaye
+  {
+    height:115px;
+    width: 135px;
+    margin-right:2px;
+  }
+  .cloud
+  {
+    width:125px;
+    height:80px;
+    font-size:16px;
+    margin-top:8px;
+    position:absolute;
+    margin-left:1px;
+  }
+  .thak{
+    width:100%;
+    flex-direction:row;
+  }
+  .connect-wallet-button
+  {
+    margin-left:20px;
+    margin-top:0;
+    font-size:12px;
+    padding-top:2px;
+    position:relative;
+  }
+
+  .cta-button
+  {
+    margin-left:20px;
+  }
+}
+.dont{ 
+  margin-top:50px;
+  position:absolute;
+  color:#fff;
+}
+
+
+
+
+
